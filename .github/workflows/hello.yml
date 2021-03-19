@@ -13,7 +13,7 @@ jobs:
         uses: bhoefling-c2c/guile-helloworld-action@6b46282a840be99703a612af2622e0b07b99f09a
         id: hello
         with:
-          name: '${{ secrets.CAT_NAME }}'
+          name: 'BlueOctoCat'
       - name: Just Echo
         id: echo
         run: echo "Just echoing something."
