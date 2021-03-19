@@ -17,4 +17,4 @@ jobs:
         run: echo "Just echoing something."
       - name: Print Greeting
         id: printgreeting
-        run: echo "The greeting was: ${{ steps.hello.outputs.full-greeting }}"
+        run: echo "The greeting was: ${{ steps.hello.outputs.fullgreeting }}"
