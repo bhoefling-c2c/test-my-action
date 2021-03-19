@@ -1,0 +1,20 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Hello world action step
+        uses: bhoefling-c2c/guile-helloworld-action@750ef4ed0eba059966bae45cb43193408d934d61
+        id: hello
+#        with:
+#          name: 'Mona the Octocat'
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The full greeting was: ${{ steps.hello.outputs.full-greeting }}"
+        
