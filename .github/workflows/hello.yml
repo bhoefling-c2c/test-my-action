@@ -10,5 +10,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
-        uses: bhoefling-c2c/guile-helloworld-action@750ef4ed0eba059966bae45cb43193408d934d61
+        uses: bhoefling-c2c/guile-helloworld-action@6b46282a840be99703a612af2622e0b07b99f09a
         id: hello
